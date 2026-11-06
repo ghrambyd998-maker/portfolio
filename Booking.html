@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" dir="rtl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حجز سيارة</title>
+  
+  <!-- ربط ملف التنسيق -->
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body class="body-booking">
+
+  <div class="form-container" style="margin: 30px auto;width: 80%;">
+    <!-- منع إعادة تحميل الصفحة -->
+    <form onsubmit="return false;">
+      
+      <fieldset>
+        <legend>بيانات الحجز</legend>
+
+        <div class="form-row">
+          <label for="fullName">الاسم الكامل:</label>
+          <input type="text" id="fullName" name="fullName" />
+        </div>
+
+        <div class="form-row">
+          <label for="mobile">رقم الموبايل:</label>
+          <input type="tel" id="mobile" name="mobile" />
+        </div>
+
+        <div class="form-row">
+          <label for="nationalId">الرقم الوطني <span class="required">*</span>:</label>
+          <input type="text" id="nationalId" name="nationalId" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-row">
+          <label for="startDate">تاريخ البداية <span class="required">*</span>:</label>
+          <input type="date" id="startDate" name="startDate" />
+        </div>
+
+        <div class="form-row">
+          <label for="endDate">تاريخ النهاية <span class="required">*</span>:</label>
+          <input type="date" id="endDate" name="endDate" />
+        </div>
+      </fieldset>
+
+      <div class="btn-container">
+        <!-- زر التأكيد يستدعي الدالة -->
+        <button type="button" onclick="processBooking()" class="btn">تأكيد الحجز</button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- نافذة الإشعار بدون أي عناوين إضافية -->
+  <div id="resultModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div id="resultDetails"></div>
+      <div class="btn-container">
+        <button type="button" onclick="confirmBooking()" class="btn">تأكيد</button>
+        <button type="button" onclick="closeModal()" class="btn">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ربط ملف الجافاسكريبت في النهاية -->
+  <script src="myFunctions.js" defer></script>
+
+</body>
+</html>

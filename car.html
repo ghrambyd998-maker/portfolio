@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" xml:lang="ar">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>السيارات</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script type="text/javascript" src="myFunctions.js" defer></script>
+  </head>
+  <body>
+    <header >
+      <h1>قائمة السيارات</h1>
+      <p>اختر سيارتك المفضلة</p>
+  </header>
+
+  <nav class="nav">
+      <a href="index.html">الصفحة الرئيسية</a>
+      <a href='aboutus.html'>من نحن</a>
+      <a href='car.html' class="active ">السيارات</a>
+  </nav>
+
+  <section class="hero">
+      <h2>السيارات المتوفرة</h2>
+      <p>
+        استعرض افضل الموديلات واطلع على التفاصيل واختر مايناسبك من القائمة
+      </p>
+  </section>
+    <div class="cars-page">
+      <h2 class="cars-title">السيارات المتاحة</h2>
+
+      <table class="cars-table">
+        <thead>
+          <tr>
+            <th>الرمز</th>
+            <th>الصورة</th>
+            <th>الموديل</th>
+            <th>سنة الصنع</th>
+            <th>السعر اليومي</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="car-row">
+            <td>CR-001</td>
+            <td>
+              <img
+                class="car-img"
+                src="images/car1.jpg.png"
+                alt="Toyota Corolla"
+              />
+            </td>
+            <td class="en">Toyota Corolla</td>
+            <td class="en">2023</td>
+            <td>250000 ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td><input type="checkbox" class="select-car" /></td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="7">
+              <div class="details-content">
+                <span><b>نوع الوقود:</b> بنزين</span>
+                <span><b>ناقل الحركة:</b> أوتوماتيك</span>
+                <span><b>عدد المقاعد:</b> 5</span>
+                <span><b>عدد الكيلومترات:</b> 45000</span>
+                <span><b>اللون:</b> أبيض</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="car-row">
+            <td>CR-002</td>
+            <td>
+              <img
+                class="car-img"
+                src="images/car2.jpg.png"
+                alt="Kia Sportage"
+              />
+            </td>
+            <td class="en">Kia Sportage</td>
+            <td class="en">2022</td>
+            <td>400000 ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td><input type="checkbox" class="select-car" /></td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="7">
+              <div class="details-content">
+                <span><b>نوع الوقود:</b> بنزين</span>
+                <span><b>ناقل الحركة:</b> أوتوماتيك</span>
+                <span><b>عدد المقاعد:</b> 5</span>
+                <span><b>عدد الكيلومترات:</b> 38000</span>
+                <span><b>اللون:</b> رمادي</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="car-row">
+            <td>CR-003</td>
+            <td>
+              <img
+                class="car-img"
+                src="images/car3.jpg.png"
+                alt="Hyundai Elantra"
+              />
+            </td>
+            <td class="en">Hyundai Elantra</td>
+            <td class="en">2024</td>
+            <td>300000 ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td><input type="checkbox" class="select-car" /></td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="7">
+              <div class="details-content">
+                <span><b>نوع الوقود:</b> بنزين</span>
+                <span><b>ناقل الحركة:</b> أوتوماتيك</span>
+                <span><b>عدد المقاعد:</b> 5</span>
+                <span><b>عدد الكيلومترات:</b> 12000</span>
+                <span><b>اللون:</b> أسود</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="car-row">
+            <td>CR-004</td>
+            <td>
+              <img
+                class="car-img"
+                src="images/car4.jpg.png"
+                alt="Chevrolet Spark"
+              />
+            </td>
+            <td class="en">Chevrolet Spark</td>
+            <td class="en">2021</td>
+            <td>180000 ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td><input type="checkbox" class="select-car" /></td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="7">
+              <div class="details-content">
+                <span><b>نوع الوقود:</b> بنزين</span>
+                <span><b>ناقل الحركة:</b> عادي (يدوي)</span>
+                <span><b>عدد المقاعد:</b> 4</span>
+                <span><b>عدد الكيلومترات:</b> 62000</span>
+                <span><b>اللون:</b> أحمر</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="car-row">
+            <td>CR-005</td>
+            <td>
+              <img
+                class="car-img"
+                src="images/car5.jpg.png"
+                alt="Nissan Sunny"
+              />
+            </td>
+            <td class="en">Nissan Sunny</td>
+            <td class="en">2020</td>
+            <td>200000 ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td><input type="checkbox" class="select-car" /></td>
+          </tr>
+          <tr class="details-row">
+            <td colspan="7">
+              <div class="details-content">
+                <span><b>نوع الوقود:</b> بنزين</span>
+                <span><b>ناقل الحركة:</b> عادي (يدوي)</span>
+                <span><b>عدد المقاعد:</b> 5</span>
+                <span><b>عدد الكيلومترات:</b> 78000</span>
+                <span><b>اللون:</b> فضي</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cars-actions">
+        <a href="Booking.html" class="cars-btn">متابعة</a>
+      </div>
+    </div>
+  </body>
+</html>
